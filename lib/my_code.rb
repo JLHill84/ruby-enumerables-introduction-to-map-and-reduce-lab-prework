@@ -16,9 +16,9 @@ end
 
 def reduce_to_total(source_array, starting_point)
   if starting_point do
-  source_array.reduce(starting_point)
-else source_array.reduce(0)
-end
+   source_array.reduce(starting_point)
+  else source_array.reduce(0)
+  end
 end
 
 def reduce_to_all_true(source_array)
