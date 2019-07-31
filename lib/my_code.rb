@@ -16,8 +16,8 @@ end
 
 def reduce_to_total(source_array, starting_point)
   if starting_point = nil do
-   source_array.reduce(0) {total}
-  else source_array.reduce(starting_point) {total}
+   source_array.reduce(0) {|sum, num| sum + num}
+  else source_array.reduce(starting_point) {|sum, num| sum + num}
   end
 end
 
