@@ -16,6 +16,7 @@ end
 
 def reduce_to_total(source_array, starting_point)
   if starting_point = nil then starting_point = 0
+else
   new = starting_point
   i = 0
   while i < source_array.length do
@@ -23,6 +24,7 @@ def reduce_to_total(source_array, starting_point)
     i += 1
   end
   return new
+end
 end
 
 def reduce_to_all_true(source_array)
