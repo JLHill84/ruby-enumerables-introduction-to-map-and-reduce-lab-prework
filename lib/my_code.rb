@@ -15,7 +15,10 @@ def map_to_square(source_array)
 end
 
 def reduce_to_total(source_array, starting_point)
-  source_array.reduce(0)
+  if starting_point = nil do
+   source_array.reduce(0)
+  else source_array.reduce(starting_point)
+  end
 end
 
 def reduce_to_all_true(source_array)
