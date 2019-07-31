@@ -30,8 +30,8 @@ def reduce_to_all_true(source_array)
     if !source_array[i]
       return false
       i += 1
-    else return true
-  
+    end
+  return true
 end
 
 def reduce_to_any_true(source_array)
