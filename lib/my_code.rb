@@ -19,6 +19,7 @@ def reduce_to_total(source_array, starting_point)
    source_array.reduce(0) {|sum, num| sum + num}
   else source_array.reduce(starting_point) {|sum, num| sum + num}
   end
+  return sum
 end
 
 def reduce_to_all_true(source_array)
